@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hoang Dao, PhD</title>
+<meta name="description" content="Hoang Dao, PhD. Applied microeconomist, Phenikaa University, Hanoi. Research, books, teaching, projects and the blog Ceteris Paribus, Mostly.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
+<style>
+/* Mix of the two designs: Wix layout (photo banner, overlapping portrait, button row, bookshelf footer)
+   with the first version's type (Bricolage Grotesque, Be Vietnam Pro, Literata), stats strip and supply-and-demand chart.
+   Palette: gold gradients on white-to-grey gradients, graphite for depth. Single light theme by design. */
+:root{
+  --ink:#1f2228; --graphite:#2b2f36; --muted:#5f6670; --line:#dde0e5; --paper:#ffffff; --mist:#f2f3f5;
+  --gold:#d4a72c; --gold-d:#8a6510; --gold-l:#f3dc92;
+  --g-gold:linear-gradient(135deg,#fbe7a6 0%,#e8bf4a 42%,#c9971c 72%,#a97a0e 100%);
+  --g-gold-soft:linear-gradient(135deg,#fdf6df 0%,#f6e6b4 100%);
+  --g-grey:linear-gradient(180deg,#ffffff 0%,#eef0f3 100%);
+  --g-grey2:linear-gradient(180deg,#f7f8fa 0%,#e6e9ed 100%);
+  --g-graphite:linear-gradient(160deg,#41464f 0%,#2a2e35 55%,#1d2025 100%);
+  --f-head:"Bricolage Grotesque","Be Vietnam Pro",system-ui,sans-serif;
+  --f-serif:"Cormorant Garamond","Literata",Georgia,serif;
+  --f-body:"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-read:"Literata",Georgia,serif;
+  --wrap:1180px; --r:8px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:#f7f8fa;color:var(--ink);font-family:var(--f-body);font-weight:400;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--gold-d)}
+img{max-width:100%;display:block}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 clamp(16px,4vw,48px)}
+h1,h2,h3{font-family:var(--f-head);font-weight:800;line-height:1.1;margin:0;text-wrap:balance;letter-spacing:-.01em}
+b,strong{font-weight:600}
+.goldtext{background:var(--g-gold);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* top strip + header */
+.featbar{display:flex;justify-content:center;align-items:center;gap:8px;background:var(--g-gold);color:#241b05;font:500 .9rem var(--f-body);padding:7px 16px;text-decoration:none;text-align:center;flex-wrap:wrap}
+.featbar b{font-weight:700}
+.featbar:hover u{color:#000}
+.fb-tag{background:var(--graphite);color:var(--gold-l);font:700 .68rem var(--f-body);letter-spacing:.14em;text-transform:uppercase;padding:2px 7px;border-radius:3px}
+@media (max-width:560px){.fb-txt{display:none}}
+header.top{background:var(--g-grey);color:var(--ink);position:sticky;top:0;z-index:30;box-shadow:0 1px 0 var(--line),0 6px 18px rgba(30,34,40,.06)}
+.top .wrap{display:flex;align-items:center;gap:16px;min-height:84px;flex-wrap:wrap;padding-top:8px;padding-bottom:8px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--f-head);font-weight:800;font-size:1.35rem;color:var(--ink);text-decoration:none;white-space:nowrap}
+.seal{width:36px;height:36px;border-radius:8px;background:var(--g-gold);color:#241b05;display:grid;place-items:center;font:800 .95rem var(--f-head);letter-spacing:-.04em;box-shadow:inset 0 -2px 0 rgba(0,0,0,.12)}
+.li{display:inline-flex;width:30px;height:30px;color:var(--graphite)}
+.li svg{width:22px;height:22px;margin:auto}
+nav.main{display:flex;gap:2px;flex:1;justify-content:center;flex-wrap:wrap}
+nav.main a{font-family:var(--f-body);font-weight:500;font-size:.93rem;color:var(--muted);text-decoration:none;padding:7px 9px;border-radius:7px}
+nav.main a:hover{color:var(--ink);background:rgba(0,0,0,.04)}
+nav.main a[aria-current="page"]{color:#241b05;background:var(--g-gold-soft);box-shadow:inset 0 -2px 0 var(--gold)}
+.tools{display:flex;gap:10px;align-items:center}
+.search{display:flex;align-items:center;background:#fff;height:36px;width:140px;padding:0 10px;gap:6px;border:1px solid var(--line);border-radius:999px}
+.search svg{width:16px;height:16px;flex:none;color:var(--muted)}
+.search input{border:0;outline:0;font:400 14px var(--f-body);width:100%;color:var(--ink);background:transparent}
+.lang{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:#fff}
+.lang button{border:0;background:transparent;color:var(--muted);font:600 12px var(--f-body);padding:7px 11px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--graphite);color:var(--gold-l)}
+.menu-btn{display:none;background:#fff;border:1px solid var(--line);color:var(--ink);font:500 14px var(--f-body);padding:6px 12px;border-radius:8px}
+@media (max-width:1120px){
+  .menu-btn{display:block;margin-left:auto}
+  nav.main{display:none;order:5;flex-basis:100%;flex-direction:column;align-items:flex-start;padding-bottom:10px}
+  nav.main.open{display:flex}
+  .tools{order:4;flex-basis:100%}
+  .search{flex:1}
+}
+
+/* banner + hero */
+.banner{background:#1d2025 center/cover no-repeat;position:relative}
+.banner::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(29,32,37,.35) 0%,rgba(29,32,37,.62) 60%,rgba(120,88,14,.45) 100%)}
+.hero-band{height:390px}
+.hero{position:relative;display:grid;grid-template-columns:403px 1fr;gap:clamp(24px,6vw,140px);margin-top:-310px;z-index:2}
+.portrait{padding:8px;background:var(--g-gold);border-radius:6px;box-shadow:0 18px 40px rgba(20,22,26,.28)}
+.portrait img{width:100%;height:423px;object-fit:cover;border-radius:3px}
+.hero-title{color:#fff;padding-top:60px}
+.hero-title h1{font-size:clamp(2.6rem,4.8vw,3.6rem);color:#fff;letter-spacing:-.03em}
+.hero-title h1 .phd{background:var(--g-gold);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-title p{font-weight:300;font-size:clamp(1.05rem,1.7vw,1.35rem);line-height:1.3;margin:14px 0 0;color:#f1f2f4}
+.btnrow{display:flex;gap:12px;margin-top:22px;flex-wrap:wrap}
+.hero .btnrow{flex-wrap:nowrap;max-width:419px}.hero .btnrow .wbtn{flex:1;min-width:0;padding:0 8px;white-space:nowrap}
+.wbtn{display:inline-flex;align-items:center;justify-content:center;gap:6px;height:44px;padding:0 22px;background:var(--g-gold);color:#241b05;text-decoration:none;font:600 15px var(--f-body);letter-spacing:.03em;border:0;border-radius:8px;cursor:pointer;box-shadow:inset 0 -2px 0 rgba(0,0,0,.12),0 4px 12px rgba(169,122,14,.22);transition:filter .15s,transform .15s}
+.wbtn:hover{filter:brightness(1.06);transform:translateY(-1px)}
+.wbtn.ghost{background:var(--g-grey);color:var(--ink);box-shadow:inset 0 0 0 1px var(--line)}
+.wbtn.dark{background:var(--g-graphite);color:var(--gold-l)}
+.wbtn.sm{height:36px;padding:0 14px;font-size:13.5px}
+.welcome{font-family:var(--f-read);font-size:1.04rem;line-height:1.8;margin-top:104px}
+.welcome p{margin:0 0 1.2em}
+.welcome p:first-child{font-family:var(--f-head);font-weight:700;font-size:1.3rem}
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr}
+  .portrait{max-width:330px}
+  .portrait img{height:auto;aspect-ratio:403/423}
+  .hero-title{padding-top:10px}
+  .hero-title h1{color:var(--ink)} .hero-title p{color:var(--muted)}
+  .hero-title h1 .phd{background:none;color:var(--gold-d)}
+  .hero .btnrow .wbtn{font-size:14px}
+  .welcome{margin-top:22px}
+  .hero-band{height:220px}
+  .hero{margin-top:-170px}
+}
+
+/* stats strip (from v1) */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);background:var(--g-grey);border:1px solid var(--line);border-radius:12px;margin:44px 0 0;overflow:hidden}
+.stat{padding:20px 22px;border-right:1px solid var(--line)}
+.stat:last-child{border-right:0}
+.stat b{display:block;font:800 2.3rem/1.05 var(--f-head);font-variant-numeric:tabular-nums;background:var(--g-gold);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat span{font-size:.88rem;color:var(--muted)}
+@media (max-width:640px){.stats{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--line)}}
+
+/* page banner */
+.pagehead{padding:56px 0 44px;color:#fff}
+.pagehead .wrap{position:relative;z-index:2}
+.pagehead h1{font-size:clamp(2.1rem,4.6vw,3.3rem);color:#fff;letter-spacing:-.03em}
+.pagehead p{font-weight:300;font-size:1.15rem;margin:10px 0 0;max-width:62ch;color:#eceef1}
+.crumb{font:600 .78rem var(--f-body);letter-spacing:.16em;text-transform:uppercase;color:var(--gold-l)}
+
+section.sec{padding:60px 0}
+section.sec.alt{background:var(--g-grey2)}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:26px;flex-wrap:wrap}
+.sec-head h2,h2.sub{font-size:clamp(1.65rem,3vw,2.2rem);color:var(--ink)}
+.sec-head h2::after,h2.sub::after{content:"";display:block;width:64px;height:4px;border-radius:2px;background:var(--g-gold);margin-top:10px}
+.sec-head a{font-weight:600;font-size:.95rem;color:var(--gold-d);text-decoration:none}
+.sec-head a::after{content:" →"}
+h2.sub{font-size:1.5rem;margin:46px 0 18px}
+h3.subj{font-family:var(--f-serif);font-weight:700;font-size:1.5rem;color:var(--ink);margin:30px 0 8px;padding-bottom:6px;border-bottom:1px solid var(--line);position:relative}
+h3.subj::after{content:"";position:absolute;left:0;bottom:-1px;width:120px;height:2px;background:var(--g-gold)}
+
+.grid{display:grid;gap:20px}
+.g3{grid-template-columns:repeat(3,1fr)} .g2{grid-template-columns:repeat(2,1fr)}
+@media (max-width:900px){.g3{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:620px){.g3,.g2{grid-template-columns:1fr}}
+.card{position:relative;background:linear-gradient(180deg,#ffffff 0%,#f6f7f9 100%);border:1px solid var(--line);border-radius:var(--r);padding:24px 22px 22px;display:flex;flex-direction:column;gap:10px;text-decoration:none;color:inherit;overflow:hidden;transition:box-shadow .15s,transform .15s}
+.card::before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:var(--g-gold)}
+a.card:hover{box-shadow:0 12px 28px rgba(30,34,40,.12);transform:translateY(-2px)}
+.card h3{font-size:1.16rem;font-weight:700;color:var(--ink)}
+.card p{margin:0;font-size:.95rem;color:var(--muted)}
+.kicker{font:600 .74rem var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:var(--gold-d)}
+.meta{font-size:.82rem;color:var(--muted);display:flex;gap:8px;flex-wrap:wrap}
+.cat{display:inline-flex;align-items:center;gap:6px;font:600 .72rem var(--f-body);letter-spacing:.1em;text-transform:uppercase;color:var(--gold-d)}
+.cat svg{width:16px;height:16px}
+.icon{stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+
+/* chart (from v1) */
+.bloggrid{display:grid;grid-template-columns:.9fr 2.1fr;gap:22px;align-items:start}
+@media (max-width:980px){.bloggrid{grid-template-columns:1fr}}
+.chart{background:var(--g-grey);border:1px solid var(--line);border-radius:12px;padding:14px 14px 8px;margin:0}
+.chart svg{display:block;width:100%;height:auto}
+.chart .cap{font-size:.78rem;color:var(--muted);margin:4px 6px;font-style:italic;font-family:var(--f-read)}
+.ax{stroke:var(--graphite);stroke-width:2}
+.dcurve{stroke:url(#gGold);stroke-width:3.4;fill:none}
+.scurve{stroke:#8d939c;stroke-width:3.4;fill:none}
+.drop{stroke:#9aa0a8;stroke-dasharray:4 5;stroke-width:1.3}
+.lbl{font:600 12.5px var(--f-body);fill:var(--ink)} .lbl.m{fill:var(--muted);font-weight:500} .lbl.a{fill:var(--gold-d)}
+.eq{fill:var(--graphite)}
+@media (prefers-reduced-motion:no-preference){
+  .dcurve,.scurve{stroke-dasharray:420;animation:draw 1.4s ease-out both}.scurve{animation-delay:.25s}
+  .eq{transform-box:fill-box;transform-origin:center;animation:pop .5s 1.3s both}
+  @keyframes draw{from{stroke-dashoffset:420}to{stroke-dashoffset:0}}
+  @keyframes pop{from{opacity:.25;transform:scale(.4)}to{opacity:1;transform:scale(1)}}
+}
+
+/* books */
+.shelf{display:grid;grid-template-columns:repeat(7,1fr);gap:16px}
+@media (max-width:900px){.shelf{grid-template-columns:repeat(4,1fr)}}
+@media (max-width:520px){.shelf{grid-template-columns:repeat(2,1fr)}}
+.cover{aspect-ratio:2/3;padding:14px 12px;color:#e9eaec;display:flex;flex-direction:column;justify-content:space-between;text-decoration:none;background:var(--g-graphite);border-radius:3px 8px 8px 3px;box-shadow:6px 8px 18px rgba(20,22,26,.22);position:relative;overflow:hidden;transition:transform .15s}
+.cover::before{content:"";position:absolute;left:0;top:0;bottom:0;width:7px;background:var(--g-gold)}
+.cover.gold{background:var(--g-gold);color:#241b05}.cover.gold::before{background:var(--g-graphite)}
+.cover.gold b{background:none;-webkit-background-clip:initial;background-clip:initial;color:#241b05}
+.cover:hover{transform:translateY(-4px) rotate(-.5deg)}
+.cover b{font-family:var(--f-head);font-weight:800;font-size:1rem;line-height:1.12;background:var(--g-gold);-webkit-background-clip:text;background-clip:text;color:transparent;padding-left:4px}
+.cover small{font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;opacity:.85;padding-left:4px}
+.book{display:grid;grid-template-columns:130px 1fr;gap:26px;padding:26px 0;border-bottom:1px solid var(--line)}
+.book:last-child{border-bottom:0}
+.book h4{font-family:var(--f-head);font-weight:800;font-size:1.3rem;color:var(--ink);margin:0;line-height:1.2}
+.book .subt{font-family:var(--f-serif);font-weight:600;font-size:1.15rem;color:var(--muted);margin:2px 0 8px}
+.book .abs{font-family:var(--f-read);font-size:.98rem;line-height:1.72;margin:10px 0 14px;max-width:76ch}
+@media (max-width:640px){.book{grid-template-columns:1fr}.book .cover{max-width:140px}}
+.typetag{display:inline-block;font:700 .7rem var(--f-body);letter-spacing:.12em;text-transform:uppercase;background:var(--g-gold);color:#241b05;padding:3px 9px;border-radius:4px;margin-right:6px}
+
+/* research */
+.fields{display:grid;gap:12px}
+details.field{border:1px solid var(--line);background:var(--g-grey);border-radius:var(--r);scroll-margin-top:140px;position:relative;overflow:hidden}
+details.field::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:#c7cbd1}
+details.field[open]::before{background:var(--g-gold)}
+details.field>summary{cursor:pointer;list-style:none;padding:18px 22px 18px 26px;display:grid;grid-template-columns:1fr auto;gap:4px 16px;align-items:baseline}
+details.field>summary::-webkit-details-marker{display:none}
+.fname{font-family:var(--f-head);font-weight:700;font-size:1.22rem;color:var(--ink)}
+.fname::before{content:"+";display:inline-block;width:1.2em;color:var(--gold-d)}
+details.field[open] .fname::before{content:"−"}
+.fcount{font-size:.84rem;color:var(--gold-d);font-weight:600}
+.fprev{grid-column:1/-1;font-size:.88rem;color:var(--muted);padding-left:1.5em}
+details.field[open] .fprev{display:none}
+.fbody{padding:0 22px 6px 26px;background:#fff}
+.paper{border-top:1px solid var(--line);padding:22px 0;display:grid;grid-template-columns:140px 1fr;gap:22px}
+.paper .side{font-size:.8rem;color:var(--muted);display:grid;gap:4px;align-content:start}
+.paper h3{font-size:1.12rem;font-weight:700;color:var(--ink);margin-bottom:4px}
+.paper .auth{font-size:.93rem;margin:0 0 8px;color:var(--muted)}
+.note{font-size:.82rem;color:var(--gold-d);font-weight:600}
+details.abs-d summary{cursor:pointer;font-weight:600;font-size:.9rem;color:var(--gold-d);list-style:none}
+details.abs-d summary::-webkit-details-marker{display:none}
+details.abs-d summary::before{content:"+ "}
+details.abs-d[open] summary::before{content:"− "}
+.paper .abs{font-family:var(--f-read);font-size:.98rem;line-height:1.72;max-width:74ch;margin:10px 0 0}
+.paper .kw{font-size:.82rem;color:var(--muted);margin:8px 0 12px}
+@media (max-width:700px){.paper{grid-template-columns:1fr;gap:4px}}
+.list{margin:0;padding:0;list-style:none;display:grid;gap:12px}
+.list li{padding-left:20px;position:relative;max-width:85ch}
+.list li::before{content:"";position:absolute;left:0;top:.7em;width:9px;height:9px;border-radius:2px;background:var(--g-gold)}
+.tl div{display:grid;grid-template-columns:130px 1fr;gap:18px;padding:12px 0;border-bottom:1px solid var(--line)}
+.tl b{color:var(--gold-d);font-weight:600;font-variant-numeric:tabular-nums}
+@media (max-width:560px){.tl div{grid-template-columns:1fr;gap:0}}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+@media (max-width:860px){.two{grid-template-columns:1fr}}
+.prose{font-family:var(--f-read);font-size:1.06rem;line-height:1.75}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.chip{border:1px solid var(--line);background:var(--g-grey);color:var(--ink);padding:6px 14px;border-radius:999px;font:500 .86rem var(--f-body);cursor:pointer;text-decoration:none}
+.chip[aria-pressed="true"]{background:var(--g-gold);border-color:transparent;color:#241b05;font-weight:600}
+.chip small{opacity:.7;margin-left:4px}
+
+/* blog */
+.blogsearch{width:100%;max-width:420px;border:1px solid var(--line);border-radius:999px;padding:10px 16px;font:400 15px var(--f-body);margin-bottom:18px;background:#fff}
+.catdesc{font-family:var(--f-read);font-style:italic;color:var(--muted);margin:-6px 0 18px;min-height:1.4em}
+.month{font:700 .8rem var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:var(--gold-d);margin:30px 0 6px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+.prow{display:grid;grid-template-columns:70px 1fr;gap:18px;padding:16px 0;border-bottom:1px solid var(--line);text-decoration:none;color:inherit}
+.prow:hover h3{color:var(--gold-d)}
+.prow .d{font:800 1.7rem/1 var(--f-head);font-variant-numeric:tabular-nums;color:var(--ink)}
+.prow .d small{display:block;font:500 .72rem var(--f-body);color:var(--muted);margin-top:4px;letter-spacing:.06em;text-transform:uppercase}
+.prow h3{font-size:1.18rem;font-weight:700;color:var(--ink);margin:2px 0 4px;transition:color .15s}
+.prow p{margin:0;color:var(--muted);font-size:.95rem}
+.post{max-width:740px}
+.article{font-family:var(--f-read);font-size:1.1rem;line-height:1.8}
+.article h2{font-family:var(--f-head);font-weight:700;color:var(--ink);font-size:1.45rem;margin:1.8em 0 .5em}
+.article h3{font-family:var(--f-head);font-size:1.2rem;margin:1.4em 0 .4em}
+.article p{margin:0 0 1.1em}
+.article blockquote{margin:1.4em 0;padding:16px 20px;background:var(--g-gold-soft);border-left:5px solid var(--gold);border-radius:0 8px 8px 0}
+.article blockquote p:last-child{margin:0}
+.article table{border-collapse:collapse;width:100%;font-family:var(--f-body);font-size:.92rem;margin:1em 0;font-variant-numeric:tabular-nums}
+.article th,.article td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:left}
+.article th{background:var(--mist);font-weight:600}
+.tablewrap{overflow-x:auto}
+.sources{margin-top:36px;padding-top:16px;border-top:2px solid var(--ink);font-size:.88rem}
+.sources h2{font-size:1rem;letter-spacing:.1em;text-transform:uppercase}
+.sources ol{padding-left:1.2em;display:grid;gap:4px;color:var(--muted)}
+.sources a{color:var(--ink);word-break:break-word}
+.postnav{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:36px}
+.postnav a{border:1px solid var(--line);border-radius:var(--r);background:var(--g-grey);padding:14px;text-decoration:none;color:var(--ink);font-weight:500}
+.postnav a:hover{border-color:var(--gold)}
+.postnav small{display:block;color:var(--muted);font-size:.78rem}
+.postnav .next{text-align:right}
+
+/* featured */
+.feat{background:var(--g-graphite);color:#fff;position:relative;overflow:hidden}
+.feat::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 85% 15%,rgba(232,191,74,.28),transparent 45%),radial-gradient(circle at 5% 95%,rgba(255,255,255,.08),transparent 40%)}
+.feat .wrap{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;padding-top:60px;padding-bottom:60px}
+.ftag{display:inline-block;background:var(--g-gold);color:#241b05;font:700 .72rem var(--f-body);letter-spacing:.16em;text-transform:uppercase;padding:5px 12px;border-radius:4px}
+.feat h2{font-size:clamp(2.3rem,4.8vw,3.6rem);margin:14px 0 6px;background:var(--g-gold);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:-.03em}
+.feat .ftl{font-family:var(--f-serif);font-weight:600;font-size:1.5rem;color:#e9eaec;margin:0 0 14px}
+.feat p.fb{font-size:1.02rem;line-height:1.75;margin:0 0 16px;color:#d9dce1}
+.feat .lv{font-size:.9rem;color:var(--gold-l);margin:0 0 22px}
+.wbtn.gold{background:var(--g-gold)}
+.feat small.si{display:block;margin-top:10px;color:#aeb4bc;font-size:.85rem}
+.journey{list-style:none;margin:0;padding:0;counter-reset:j;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.journey li{counter-increment:j;background:linear-gradient(180deg,rgba(255,255,255,.10),rgba(255,255,255,.04));border:1px solid rgba(255,255,255,.16);border-radius:8px;padding:12px 14px;font-weight:500;display:flex;gap:12px;align-items:center}
+.journey li::before{content:counter(j,decimal-leading-zero);font:800 1.15rem var(--f-head);background:var(--g-gold);-webkit-background-clip:text;background-clip:text;color:transparent;font-variant-numeric:tabular-nums}
+@media (max-width:860px){.feat .wrap{grid-template-columns:1fr}}
+
+/* footer */
+footer{position:relative;color:#fff;background:#1d2025 center/cover no-repeat}
+footer::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(43,47,54,.82) 0%,rgba(29,32,37,.95) 60%,#1d2025 100%)}
+footer::after{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:var(--g-gold)}
+.fwrap{position:relative;display:grid;grid-template-columns:130px 1.3fr 1fr .8fr;gap:30px;padding:36px clamp(16px,4vw,48px) 40px 0;max-width:var(--wrap);margin:0 auto}
+.pills{display:grid;gap:12px;align-content:start}
+.pills a{display:flex;align-items:center;justify-content:center;height:56px;background:var(--g-grey2);color:var(--ink);text-decoration:none;font:600 15px var(--f-body);border-radius:0 30px 30px 0}
+.pills a:first-child{background:var(--g-gold);color:#241b05}
+.fname-big{font-family:var(--f-head);font-weight:800;font-size:clamp(1.8rem,3vw,2.4rem);line-height:1.1;background:var(--g-gold);-webkit-background-clip:text;background-clip:text;color:transparent}
+.fsub{font-family:var(--f-read);font-size:1rem;margin:14px 0 28px;color:#d9dce1}
+.mail{display:flex;gap:14px;align-items:center;font-size:.98rem}
+.mail svg{width:46px;height:34px;flex:none}
+.mail a{color:#fff;text-decoration:none;display:block}
+.fcol h4{font-family:var(--f-head);font-weight:700;font-size:1.1rem;margin:0 0 10px}
+.fcol h4 a{color:var(--gold-l)}
+.fcol .grp{font-size:.92rem;line-height:1.55;margin-bottom:14px;color:#d9dce1}
+.fcol .grp u{font-weight:600;text-decoration:none;color:#fff}
+.fcol a{color:#d9dce1;text-decoration:none}
+.fcol a:hover{color:#fff;text-decoration:underline}
+.copy{text-align:center;color:var(--muted);font-size:.86rem;padding:14px;background:var(--g-grey2)}
+@media (max-width:900px){.fwrap{grid-template-columns:1fr 1fr;padding-left:clamp(16px,4vw,48px)}.pills{grid-column:1/-1;grid-template-columns:repeat(4,1fr)}.pills a{border-radius:30px;height:46px}}
+@media (max-width:560px){.fwrap{grid-template-columns:1fr}.pills{grid-template-columns:repeat(2,1fr)}}
+
+
+
+.app{position:relative;background:linear-gradient(180deg,#fff,#f6f7f9);border:1px solid var(--line);border-radius:10px;padding:22px;display:flex;flex-direction:column;gap:10px;overflow:hidden}
+.app::before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:var(--g-gold)}
+.app .ahead{display:flex;gap:12px;align-items:center}
+.app .mono{width:44px;height:44px;border-radius:10px;background:var(--g-graphite);color:var(--gold-l);display:grid;place-items:center;font:800 1.05rem var(--f-head);flex:none}
+.app h3{font-size:1.2rem}
+.app .purpose{font-weight:600;color:var(--ink);font-size:.98rem;margin:0}
+.app .desc{font-size:.93rem;color:var(--muted);margin:0;line-height:1.6}
+.app .who{font-size:.82rem;color:var(--muted);margin:0}
+.app .who b{color:var(--gold-d)}
+.app .foot{margin-top:auto;padding-top:6px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+/* courses */
+.cgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media (max-width:900px){.cgrid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.cgrid{grid-template-columns:1fr}}
+.ccard{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:linear-gradient(180deg,#fff,#f6f7f9);text-decoration:none;color:inherit;transition:box-shadow .15s,transform .15s}
+.ccard:hover{box-shadow:0 12px 28px rgba(30,34,40,.12);transform:translateY(-2px)}
+.ccard .ph{height:130px;background:#2a2e35 center/cover no-repeat;position:relative}
+.ccard .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(29,32,37,0) 40%,rgba(29,32,37,.55));}
+.ccard .ph::before{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;background:var(--g-gold);z-index:1}
+.ccard .bd{padding:16px 18px 18px;display:grid;gap:6px}
+.ccard h3{font-size:1.15rem}
+.ccard p{margin:0;font-size:.88rem;color:var(--muted)}
+.course{display:grid;grid-template-columns:250px 1fr;gap:40px;align-items:start}
+@media (max-width:900px){.course{grid-template-columns:1fr}.toc{position:static!important}}
+.toc{position:sticky;top:150px;background:var(--g-grey);border:1px solid var(--line);border-radius:10px;padding:16px 16px 12px;font-size:.88rem;max-height:calc(100vh - 170px);overflow:auto}
+.toc b{display:block;font:600 .72rem var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:var(--gold-d);margin-bottom:8px}
+.toc a{display:block;color:var(--ink);text-decoration:none;padding:4px 0 4px 10px;border-left:2px solid var(--line);line-height:1.35}
+.toc a.l1{font-weight:600;border-left-color:var(--gold);margin-top:6px}
+.toc a:hover{color:var(--gold-d)}
+.mats{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 26px}
+.ctop{display:flex;justify-content:space-between;gap:16px;align-items:center;flex-wrap:wrap;margin-bottom:6px}
+.bookcall{display:flex;gap:14px;align-items:center;background:var(--g-gold-soft);border:1px solid #ecd9a0;border-radius:10px;padding:12px 16px;margin:0 0 28px;text-decoration:none;color:var(--ink)}
+.bookcall .cover{width:46px;aspect-ratio:2/3;padding:0;flex:none}
+.bookcall .cover b,.bookcall .cover small{display:none}
+.cbody h3.c1{font-family:var(--f-head);font-size:1.45rem;margin:34px 0 10px;padding-bottom:6px;border-bottom:1px solid var(--line);position:relative;scroll-margin-top:150px}
+.cbody h3.c1::after{content:"";position:absolute;left:0;bottom:-1px;width:90px;height:2px;background:var(--g-gold)}
+.cbody h4.c2{font-family:var(--f-head);font-weight:700;font-size:1.1rem;margin:22px 0 6px;scroll-margin-top:150px}
+.cbody ul.pts{margin:0 0 6px;padding-left:20px}
+.cbody ul.pts li{margin:2px 0}
+.cbody .clabel{font:600 .7rem var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:var(--gold-d);margin:12px 0 4px}
+.cbody .clinks{display:grid;gap:6px;margin:0 0 6px}
+.cbody .clinks a{display:flex;gap:10px;align-items:flex-start;padding:8px 12px;border:1px solid var(--line);border-radius:8px;background:#fff;text-decoration:none;color:var(--ink);font-size:.93rem;line-height:1.4}
+.cbody .clinks a:hover{border-color:var(--gold)}
+.cbody .clinks svg{width:18px;height:18px;flex:none;color:var(--gold-d);margin-top:1px}
+.cbody .cnote{font-family:var(--f-read);font-style:italic;color:var(--muted)}
+dialog{border:0;border-radius:12px;padding:26px;max-width:520px;width:calc(100% - 32px);font-family:var(--f-body);background:var(--g-grey);box-shadow:0 20px 60px rgba(0,0,0,.25)}
+dialog::before{content:"";display:block;height:4px;margin:-26px -26px 22px;background:var(--g-gold);border-radius:12px 12px 0 0}
+dialog::backdrop{background:rgba(29,32,37,.55)}
+dialog h2{font-size:1.35rem;margin-bottom:8px}
+dialog .subj{font-family:var(--f-read);background:#fff;border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin:10px 0 16px;word-break:break-word}
+.toast{font-size:.85rem;color:var(--gold-d);min-height:1.2em;margin-top:10px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="featbar" id="featBtn" href="#"><span class="fb-tag">New</span> <b>Research Companion</b><span class="fb-txt"> · <span id="featLine"></span></span> <u id="featCta"></u> ↗</a>
+  <div class="wrap">
+    <a class="brand" href="#home"><span class="seal">HD</span>Hoang Dao, PhD</a>
+    <a class="li" id="liLink" href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.2c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V21h-4z"/></svg></a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="mainNav">Menu</button>
+    <nav class="main" id="mainNav" aria-label="Main"></nav>
+    <div class="tools">
+      <label class="search"><svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><input id="topSearch" type="search" placeholder="Search..." aria-label="Search the blog"></label>
+      <div class="lang" role="group" aria-label="Language"><button id="lang-en" type="button" aria-pressed="true">EN</button><button id="lang-vi" type="button" aria-pressed="false">VI</button></div>
+    </div>
+  </div>
+</header>
+<main id="app"></main>
+<footer id="foot"></footer>
+<div class="copy">©2026 by Hoang Dao.</div>
+
+<dialog id="reqDlg" aria-labelledby="reqTitle">
+  <h2 id="reqTitle"></h2>
+  <p id="reqText"></p>
+  <div class="subj" id="reqSubj"></div>
+  <div class="btnrow" style="margin-top:0">
+    <a class="wbtn sm" id="reqMail" href="#">Open email</a>
+    <button class="wbtn sm ghost" id="reqCopy" type="button"></button>
+    <button class="wbtn sm ghost" id="reqClose" type="button"></button>
+  </div>
+  <div class="toast" id="reqToast" role="status"></div>
+</dialog>
+
+<script src="site-data.js"></script>
+<script src="posts.js"></script>
+<script>
+(function(){
+const S = window.SITE, POSTS = (window.POSTS||[]).slice().sort((a,b)=>b.date.localeCompare(a.date));
+const IMG = window.IMG || {city:'img/city.jpg', profile:'img/profile.jpg', library:'img/library.jpg'};
+let lang='en';
+try{ const l=localStorage.getItem('hd-lang'); if(l==='vi'||l==='en') lang=l; }catch(e){}
+
+const T={
+ en:{home:"Home",about:"CV",research:"Research",books:"Books",projects:"Apps",teaching:"Courses",blog:"Blog",contact:"Contact",
+  roles:["Assistant Professor","Program Director of the Digital Economics Program","Dept of Interdisciplinary Digital Technology","Phenikaa University"],
+  welcome:[`Welcome to my personal website!`,
+   `I am an Applied Microeconomist. My research interests include Urban and Transportation Economics, with empirical applications of choice models usually employed in Applied Industrial Organization. Lately my work has spread to Digital, Environmental, Health and Education Economics, and to coffee, airlines and craft villages. You can read more about my research <a href="#research">here</a>.`,
+   `My teaching interests include everything Micro or Applied Micro. My favorites so far are Urban Econ, Health Econ, Digital Econ, Public Econ, and Applied Econometrics, for their rigor and applicability. I try to keep all of my classes fun, intriguing, and hands on whenever possible. I have also written textbooks for most of them: see my <a href="#books">books</a>, or find out more about my teaching <a href="#teaching">here</a>.`,
+   `I also founded GAEA Academy and the Young Scholars Initiative (YSI) to support young researchers in Vietnam, and I build apps for learners and researchers, from Buddy (language and exam prep) to Research Companion. Check out my <a href="#projects">apps</a>, and my blog <a href="#blog">Ceteris Paribus, Mostly</a>, where the internet's latest obsession gets an economist's sarcastic once-over.`],
+  cvBtn:"CV",coursesBtn:"Courses",contactBtn:"Contact me",statPapers:"working papers in 2026",statBooks:"books",statPosts:"blog posts and counting",statAreas:"research fields",chartCap:"Figure 1. Market for this blog. Equilibrium reached at roughly one coffee per post.",
+  latest:"Latest from the blog",allPosts:"All posts",myBooks:"My books",allBooks:"All books",areas:"Research areas",allResearch:"All research",things:"Apps I built",allProjects:"All apps",
+  papersN:n=>n+(n===1?" paper":" papers"),
+  resLede:n=>`${n} manuscripts from 2026, grouped by field and sorted by title. Open a field, open an abstract, and request any full paper.`,
+  expand:"Expand all fields",collapse:"Collapse all",abstract:"Abstract",request:"Request paper",keywords:"Keywords",jel:"JEL",earlier:"Earlier working papers",grants:"Grants and funded projects",
+  booksLede:"Textbooks for the courses I teach, plus one book for everyone who hears economics on the news.",
+  textbooks:"Textbooks",trade:"Trade books",reqBook:"Request a copy",notify:"Get notified",
+  reqTitle:"Request the full paper",reqTitleBook:"Request a copy",reqTitleNotify:"Get notified when it is out",reqText:"Email me with the subject line below:",copy:"Copy email and subject",close:"Close",copied:"Copied. Paste it into any email app.",copyFail:"Copy blocked by the browser. The address is ",
+  projLede:"Web apps I build for students, researchers and teachers, plus the initiatives I run.",forWho:"For",initiatives:"Initiatives and programs",privNote:"Opening soon",visit:"Open",soon:"Link coming soon",
+  aboutLede:"Applied microeconomist. Coffee-powered. Recovering Pokémon Go player.",
+  bio:["I am an applied microeconomist working on urban and transportation economics with the choice models of applied industrial organization. Lately I have followed the data into digital, environmental, education and health economics.",
+       "I direct the Digital Economics program at Phenikaa University in Hanoi. Before coming home I taught at the University of the South (Sewanee) and Berry College, after a PhD at the University at Buffalo.",
+       "Outside work: coffee, soccer, Pokémon Go and sketching."],
+  positions:"Experience",education:"Education",awards:"Awards and scholarships",talks:"Talks and conferences",cv:"Full CV (Google Doc)",
+  teachLede:"Micro and applied micro, taught with real data. Favourites: urban, health, digital economics and applied econometrics.",
+  teachNow:"Teaching now at Phenikaa",teachPast:"Previously taught",evals:"Student evaluations",materials:"Course materials",
+  blogTitle:"Ceteris Paribus, Mostly",blogLede:"Economics opinions with sarcasm, a lot of humor and a bit of rigor. New posts every weekday-ish.",
+  all:"All",search:"Search posts",noPosts:"No posts match yet. Try another word or category.",min:"min read",sources:"Sources",back:"All posts",prev:"Previous",next:"Next",share:"Share on Facebook",follow:"YSI on Facebook",
+  contactLede:"For papers, books, talks, students and collaborations.",email:"Email",work:"Work email",
+  fsub:"Program Director, Digital Economics program, FIDT<br>Phenikaa University",fCourses:"Courses materials",fIntro:"Intro",fCore:"Core",fElect:"Electives",
+  notFound:"That page wandered off. Back to the home page?"},
+ vi:{home:"Trang chủ",about:"Lý lịch",research:"Nghiên cứu",books:"Sách",projects:"Ứng dụng",teaching:"Giảng dạy",blog:"Blog",contact:"Liên hệ",
+  roles:["Giảng viên","Giám đốc chương trình Kinh tế số","Khoa Công nghệ số liên ngành","Trường Đại học Phenikaa"],
+  welcome:[`Chào mừng bạn đến với trang web của tôi!`,
+   `Tôi là nhà kinh tế học vi mô ứng dụng. Hướng nghiên cứu chính của tôi là kinh tế đô thị và giao thông, với các ứng dụng thực nghiệm của mô hình lựa chọn thường dùng trong tổ chức ngành. Gần đây công việc của tôi lan sang kinh tế số, môi trường, y tế và giáo dục, và cả cà phê, hàng không lẫn làng nghề. Xem thêm về nghiên cứu của tôi <a href="#research">tại đây</a>.`,
+   `Tôi thích dạy mọi thứ thuộc vi mô và vi mô ứng dụng, nhất là kinh tế đô thị, kinh tế y tế, kinh tế số, kinh tế công và kinh tế lượng ứng dụng, vì chúng vừa chặt chẽ vừa thực tế. Tôi cố gắng để mọi lớp học đều vui, gợi tò mò và thực hành nhiều. Tôi cũng viết giáo trình cho hầu hết các môn này: xem <a href="#books">sách của tôi</a>, hoặc tìm hiểu thêm về <a href="#teaching">giảng dạy</a>.`,
+   `Tôi sáng lập GAEA Academy và Sáng kiến Học giả Trẻ (YSI) để hỗ trợ các nhà nghiên cứu trẻ Việt Nam, và xây dựng các ứng dụng cho người học và nhà nghiên cứu, từ Buddy (ngoại ngữ, luyện thi) đến Research Companion. Ghé xem <a href="#projects">các ứng dụng</a> và blog <a href="#blog">Ceteris Paribus, Mostly</a>, nơi chuyện hot trên mạng được một nhà kinh tế soi bằng con mắt mỉa mai.`],
+  cvBtn:"Lý lịch",coursesBtn:"Giảng dạy",contactBtn:"Liên hệ",statPapers:"bài nghiên cứu năm 2026",statBooks:"cuốn sách",statPosts:"bài blog và còn nữa",statAreas:"lĩnh vực nghiên cứu",chartCap:"Hình 1. Thị trường của blog này. Cân bằng ở mức khoảng một ly cà phê mỗi bài.",
+  latest:"Bài mới trên blog",allPosts:"Tất cả bài viết",myBooks:"Sách của tôi",allBooks:"Tất cả sách",areas:"Hướng nghiên cứu",allResearch:"Toàn bộ nghiên cứu",things:"Ứng dụng tôi xây dựng",allProjects:"Tất cả ứng dụng",
+  papersN:n=>n+" bài",
+  resLede:n=>`${n} bản thảo năm 2026, xếp theo lĩnh vực và theo tên bài. Mở từng lĩnh vực, mở tóm tắt, và xin bản đầy đủ khi cần.`,
+  expand:"Mở tất cả",collapse:"Thu gọn",abstract:"Tóm tắt (tiếng Anh)",request:"Xin bản đầy đủ",keywords:"Từ khóa",jel:"JEL",earlier:"Các bài nghiên cứu trước",grants:"Đề tài và tài trợ",
+  booksLede:"Giáo trình cho các môn tôi giảng dạy, cùng một cuốn sách cho tất cả những ai nghe thuật ngữ kinh tế trên bản tin mỗi ngày.",
+  textbooks:"Giáo trình",trade:"Sách phổ thông",reqBook:"Xin bản sách",notify:"Nhận thông báo",
+  reqTitle:"Xin bản đầy đủ của bài báo",reqTitleBook:"Xin bản sách",reqTitleNotify:"Nhận thông báo khi sách phát hành",reqText:"Gửi email cho tôi với tiêu đề dưới đây:",copy:"Sao chép email và tiêu đề",close:"Đóng",copied:"Đã sao chép. Dán vào ứng dụng email bất kỳ.",copyFail:"Trình duyệt chặn sao chép. Địa chỉ là ",
+  projLede:"Các ứng dụng web tôi xây dựng cho học sinh, sinh viên, nhà nghiên cứu và giảng viên, cùng các sáng kiến tôi điều hành.",forWho:"Dành cho",initiatives:"Sáng kiến và chương trình",privNote:"Sắp mở",visit:"Mở",soon:"Sắp có đường dẫn",
+  aboutLede:"Nhà kinh tế vi mô ứng dụng. Chạy bằng cà phê. Người chơi Pokémon Go đang cai nghiện.",
+  bio:["Tôi là nhà kinh tế học vi mô ứng dụng, nghiên cứu kinh tế đô thị và giao thông bằng các mô hình lựa chọn của tổ chức ngành ứng dụng. Gần đây tôi đi theo dữ liệu sang kinh tế số, môi trường, giáo dục và y tế.",
+       "Tôi là Giám đốc chương trình Kinh tế số tại Trường Đại học Phenikaa (Hà Nội). Trước khi về nước, tôi giảng dạy tại University of the South (Sewanee) và Berry College, sau khi nhận bằng Tiến sĩ tại University at Buffalo.",
+       "Ngoài giờ làm: cà phê, bóng đá, Pokémon Go và vẽ phác thảo."],
+  positions:"Kinh nghiệm",education:"Học vấn",awards:"Giải thưởng và học bổng",talks:"Báo cáo và hội thảo",cv:"CV đầy đủ (Google Doc)",
+  teachLede:"Vi mô và vi mô ứng dụng, dạy bằng dữ liệu thật. Yêu thích: kinh tế đô thị, y tế, kinh tế số và kinh tế lượng ứng dụng.",
+  teachNow:"Đang giảng dạy tại Phenikaa",teachPast:"Đã giảng dạy",evals:"Đánh giá của sinh viên",materials:"Tài liệu môn học",
+  blogTitle:"Ceteris Paribus, Mostly",blogLede:"Bình luận kinh tế kèm chút mỉa mai, rất nhiều tiếng cười và một ít nghiêm túc. Bài mới gần như mỗi ngày làm việc.",
+  all:"Tất cả",search:"Tìm bài viết",noPosts:"Chưa có bài phù hợp. Thử từ khóa hoặc chuyên mục khác.",min:"phút đọc",sources:"Nguồn tham khảo",back:"Tất cả bài viết",prev:"Bài trước",next:"Bài sau",share:"Chia sẻ lên Facebook",follow:"YSI trên Facebook",
+  contactLede:"Về bài báo, sách, báo cáo, sinh viên và hợp tác.",email:"Email",work:"Email công việc",
+  fsub:"Giám đốc chương trình Kinh tế số, Khoa FIDT<br>Trường Đại học Phenikaa",fCourses:"Tài liệu môn học",fIntro:"Nhập môn",fCore:"Cốt lõi",fElect:"Tự chọn",
+  notFound:"Trang này đi lạc rồi. Quay về trang chủ nhé?"}
+};
+const t=k=>T[lang][k];
+const L=o=>(o&&typeof o==='object')?(o[lang]??o.en):o;
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const ICONS={"hot-take":'<path d="M12 21c4 0 6-2.6 6-6 0-4-3-5.5-3.5-9-2 1.5-3 3.5-3 5.5-1.2-.8-1.8-2-2-3.2C7.4 10 6 12.4 6 15c0 3.4 2 6 6 6z"/>',"fun-facts":'<path d="M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.5 6.7 19.4l1.2-6L3.4 9.3l6-.7z"/>',"firm-history":'<path d="M4 21V9l6-4v16M10 21V3l10 5v13M2 21h20M14 11h2M14 15h2"/>',"how-to-theory":'<path d="M4 4v16h16"/><path d="M6 6c4 0 8 8 13 11M6 17c4-2 8-8 13-11"/>',"how-to-methods":'<path d="M4 4v16h16"/><path d="M6 17L19 6"/>',"data-hunter":'<path d="M5 20V12M10 20V6M15 20v-9M20 20V9"/>',"book-review":'<path d="M4 5c3-1 5-1 8 1 3-2 5-2 8-1v14c-3-1-5-1-8 1-3-2-5-2-8-1zM12 6v14"/>',"research-notes":'<path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 12h7M9 16h7"/>',"myth-busting":'<circle cx="12" cy="12" r="9"/><path d="M6 6l12 12"/>'};
+const icon=c=>`<svg viewBox="0 0 24 24" aria-hidden="true"><g class="icon">${ICONS[c]||ICONS["hot-take"]}</g></svg>`;
+const catName=c=>S.categories[c]?S.categories[c][lang]:c;
+const COVER={labor:'#111792',urban:'#1d1547',health:'#0f6b78',env:'#2f6b3a',digital:'#a12a8f',compass:'#7a4b12',nobel:'#8a1c1c'};
+function fmtDate(iso){const d=new Date(iso+'T12:00:00');return lang==='vi'?`${d.getDate()}/${d.getMonth()+1}/${d.getFullYear()}`:d.toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'});}
+function monthLabel(iso){const d=new Date(iso+'T12:00:00');return lang==='vi'?`Tháng ${d.getMonth()+1}, ${d.getFullYear()}`:d.toLocaleDateString('en-GB',{month:'long',year:'numeric'});}
+const pT=p=>lang==='vi'?p.title_vi:p.title_en, pX=p=>lang==='vi'?p.excerpt_vi:p.excerpt_en;
+
+const NAV=['home','about','research','books','projects','teaching','blog','contact'];
+function renderChrome(active){
+  document.getElementById('mainNav').innerHTML=NAV.map(k=>`<a href="#${k}" ${k===active?'aria-current="page"':''}>${t(k)}</a>`).join('');document.getElementById('featBtn').href=S.featured.url;document.getElementById('featLine').textContent=L(S.featured.tagline);document.getElementById('featCta').textContent=lang==='vi'?'Dùng thử':'Try it';
+  document.getElementById('lang-en').setAttribute('aria-pressed',lang==='en');
+  document.getElementById('lang-vi').setAttribute('aria-pressed',lang==='vi');
+  document.getElementById('liLink').href=S.links.linkedin;
+  document.documentElement.lang=lang;
+  
+  document.getElementById('foot').style.backgroundImage=`url("${IMG.library}")`;
+  document.getElementById('foot').innerHTML=`<div class="fwrap">
+    <div class="pills"><a href="#home">${t('home')}</a><a href="#about">${t('about')}</a><a href="#teaching">${t('teaching')}</a><a href="#blog">${t('blog')}</a></div>
+    <div><div class="fname-big">Hoang Dao (HD), PhD</div><p class="fsub">${t('fsub')}</p>
+      <div class="mail"><svg viewBox="0 0 46 34" aria-hidden="true"><rect x="1" y="1" width="44" height="32" fill="none" stroke="#fff" stroke-width="2"/><path d="M1 1l22 17L45 1" fill="none" stroke="#fff" stroke-width="2"/><rect x="30" y="20" width="10" height="8" fill="#e8bf4a"/><path d="M6 22h14M6 26h14" stroke="#fff" stroke-width="2"/></svg>
+      <div><a href="mailto:${S.email}">${S.email}</a><a href="mailto:${S.emailWork}">${S.emailWork}</a></div></div></div>
+    <div class="fcol"><h4><a href="#teaching">${t('fCourses')}</a></h4>
+      <div class="grp"><u>${t('fIntro')}</u>:<br><a href="#course-intro">Intro to Microeconomics</a><br><a href="#course-intro">Intro to Macroeconomics</a></div>
+      <div class="grp"><u>${t('fCore')}</u>:<br><a href="#course-micro">Microeconomics Theory</a><br><a href="#course-metrics1">Business Statistics</a><br><a href="#course-metrics1">Introduction to Econometrics</a><br><a href="#course-metrics2">Applied Econometrics</a></div>
+      <div class="grp"><u>${t('fElect')}</u>:<br><a href="#course-urban">Urban Economics</a><br><a href="#course-health">Health Economics</a></div></div>
+    <div class="fcol"><h4><a href="#research">${t('research')}</a></h4><h4 style="margin-top:22px"><a href="#books">${t('books')}</a></h4><h4 style="margin-top:22px"><a href="${S.links.gaea}">GAEA</a></h4><h4 style="margin-top:22px"><a href="${S.links.ysiWeb}">YSI</a></h4><h4 style="margin-top:22px"><a href="#blog">${t('blog')}</a></h4></div>
+  </div>`;
+}
+function bannerStyle(){return `style="background-image:url('${IMG.city}')"`;}
+function pageHead(kicker,title,lede){return `<div class="banner pagehead" ${bannerStyle()}><div class="wrap"><div class="crumb">${kicker}</div><h1>${title}</h1>${lede?`<p>${lede}</p>`:''}</div></div>`;}
+function postCard(p){return `<a class="card" href="#post-${p.slug}"><span class="cat">${icon(p.category)}${esc(catName(p.category))}</span><h3>${esc(pT(p))}</h3><p>${esc(pX(p))}</p><div class="meta"><span>${fmtDate(p.date)}</span><span>·</span><span>${p.reading_minutes||5} ${t('min')}</span></div></a>`;}
+function coverHTML(b,href){const gold=['urban','env','compass'].includes(b.id)||b.type==='trade';return `<a class="cover${gold?' gold':''}" href="${href||'#books'}"><small>${esc(L(b.subject))}</small><b>${esc(b.title.split(':')[0])}</b><small>Hoang Dao${b.authors.includes(',')?' et al.':''}</small></a>`;}
+function ventureCard(v){const link=v.url?`<a class="wbtn sm" href="${v.url}">${t('visit')} ↗</a>`:`<span class="meta">${t('soon')}</span>`;const extra=v.url2?` <a class="wbtn sm ghost" href="${v.url2}">ysi.org.vn ↗</a>`:'';return `<div class="card"><span class="kicker">${esc(L(v.kind))}</span><h3>${esc(v.name)}</h3><p>${esc(L(v.blurb))}</p><div class="btnrow" style="margin-top:6px">${link}${extra}</div></div>`;}
+
+function chartHTML(){const vi=lang==='vi';return `<figure class="chart"><svg viewBox="0 0 420 330" role="img" aria-label="${esc(t('chartCap'))}">
+  <defs><linearGradient id="gGold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f3d679"/><stop offset=".5" stop-color="#d9a82e"/><stop offset="1" stop-color="#9c7212"/></linearGradient></defs>
+  <line class="ax" x1="50" y1="20" x2="50" y2="282"/><line class="ax" x1="50" y1="282" x2="400" y2="282"/>
+  <path class="dcurve" d="M70 50 C 160 120, 260 200, 380 250"/><path class="scurve" d="M70 250 C 170 210, 270 130, 380 52"/>
+  <line class="drop" x1="50" y1="161" x2="224" y2="161"/><line class="drop" x1="224" y1="161" x2="224" y2="282"/><circle class="eq" cx="224" cy="161" r="7"/>
+  <text class="lbl a" x="322" y="236">${vi?'Cầu':'Demand'}</text><text class="lbl m" x="300" y="268" style="font-size:11px">${vi?'(độc giả)':'(readers)'}</text>
+  <text class="lbl" x="232" y="48">${vi?'Cung':'Supply'}</text><text class="lbl m" x="232" y="64" style="font-size:11px">${vi?'(tôi, cà phê)':'(me, caffeinated)'}</text>
+  <text class="lbl" x="234" y="150">${vi?'Blog này':'This blog'}</text><text class="lbl m" x="22" y="166">P*</text><text class="lbl m" x="216" y="300">Q*</text>
+  <text class="lbl m" x="58" y="16">${vi?'Giá (ly cà phê)':'Price (cups of coffee)'}</text><text class="lbl m" x="250" y="320">${vi?'Lượng mỉa mai':'Quantity of sarcasm'}</text>
+</svg><figcaption class="cap">${t('chartCap')}</figcaption></figure>`;}
+function featuredHTML(){const f=S.featured;return `<section class="feat" aria-labelledby="featTitle"><div class="wrap">
+  <div><span class="ftag">${lang==='vi'?'Nổi bật':'Featured'}</span><h2 id="featTitle">${esc(f.name)}</h2><p class="ftl">${esc(L(f.tagline))}</p>
+    <p class="fb">${esc(L(f.blurb))}</p><p class="lv">${esc(L(f.levels))}</p>
+    <a class="wbtn gold" href="${f.url}">${lang==='vi'?'Mở Research Companion':'Open Research Companion'} ↗</a><small class="si">${esc(L(f.signin))}</small></div>
+  <ol class="journey" aria-label="${lang==='vi'?'Các bước':'Steps'}">${L(f.steps).map(x=>`<li>${esc(x)}</li>`).join('')}</ol>
+</div></section>`;}
+function viewHome(){
+  const groups=Object.keys(S.groups).map(g=>({g,n:S.papers.filter(p=>p.group===g).length}));
+  return `<div class="banner hero-band" ${bannerStyle()}></div>
+  <div class="wrap"><div class="hero">
+    <div><div class="portrait"><img src="${IMG.profile}" alt="Portrait of Hoang Dao" width="403" height="423"></div>
+      <div class="btnrow"><a class="wbtn" href="#about">${t('cvBtn')}</a><a class="wbtn" href="#teaching">${t('coursesBtn')}</a><a class="wbtn" href="#contact">${t('contactBtn')}</a></div></div>
+    <div><div class="hero-title"><h1>Hoang Dao, <span class="phd">PhD</span></h1><p>${t('roles').join('<br>')}</p></div>
+      <div class="welcome">${t('welcome').map(p=>`<p>${p}</p>`).join('')}</div></div>
+  </div>
+  <div class="stats"><div class="stat"><b>${S.papers.length}</b><span>${t('statPapers')}</span></div><div class="stat"><b>${S.books.length}</b><span>${t('statBooks')}</span></div><div class="stat"><b>${POSTS.length}</b><span>${t('statPosts')}</span></div><div class="stat"><b>${Object.keys(S.groups).length}</b><span>${t('statAreas')}</span></div></div>
+  </div>
+  <div style="height:60px"></div>${featuredHTML()}
+  <section class="sec alt"><div class="wrap"><div class="sec-head"><h2>${t('myBooks')}</h2><a href="#books">${t('allBooks')}</a></div>
+    <div class="shelf">${S.books.map(b=>coverHTML(b,'#book-'+b.id)).join('')}</div></div></section>
+  <section class="sec"><div class="wrap"><div class="sec-head"><h2>${t('latest')}</h2><a href="#blog">${t('allPosts')}</a></div>
+    <div class="bloggrid">${chartHTML()}<div class="grid g2">${POSTS.slice(0,4).map(postCard).join('')}</div></div></div></section>
+  <section class="sec alt"><div class="wrap"><div class="sec-head"><h2>${t('areas')}</h2><a href="#research">${t('allResearch')}</a></div>
+    <div class="grid g3">${groups.map(x=>`<a class="card" href="#research-${x.g}"><span class="kicker">${t('papersN')(x.n)}</span><h3>${esc(L(S.groups[x.g]))}</h3><p>${esc(S.papers.filter(p=>p.group===x.g).map(p=>p.title.split(/[?:]/)[0]).join(' · '))}</p></a>`).join('')}</div></div></section>
+  <section class="sec"><div class="wrap"><div class="sec-head"><h2>${t('things')}</h2><a href="#projects">${t('allProjects')}</a></div>
+    <div class="grid g3">${S.apps.slice(0,6).map(appCard).join('')}</div></div></section>`;
+}
+let resFilter='all';
+function paperHTML(p){return `<article class="paper" id="paper-${p.id}"><div class="side"><span>${esc(p.date)}</span>${p.jel?`<span>${t('jel')} ${esc(p.jel)}</span>`:''}</div><div>
+  <h3>${esc(p.title)}</h3><p class="auth">${esc(p.authors)}</p>${p.note?`<div class="note">${esc(p.note)}</div>`:''}
+  <details class="abs-d"><summary>${t('abstract')}</summary><p class="abs">${p.abstract}</p><p class="kw"><b>${t('keywords')}:</b> ${esc(p.keywords)}</p></details>
+  <div class="btnrow" style="margin-top:10px"><button class="wbtn sm" data-req="${p.id}" type="button">${t('request')}</button>${p.extra?`<a class="wbtn sm ghost" href="${p.extra.url}">${esc(p.extra.label)} ↗</a>`:''}</div></div></article>`;}
+function viewResearch(){
+  const fields=Object.keys(S.groups).map(g=>{const ps=S.papers.filter(p=>p.group===g);return `<details class="field" id="field-${g}"${resFilter===g?' open':''}><summary><span class="fname">${esc(L(S.groups[g]))}</span><span class="fcount">${t('papersN')(ps.length)}</span><span class="fprev">${esc(ps.map(p=>p.title.split(/[?:]/)[0]).join(' · '))}</span></summary><div class="fbody">${ps.map(paperHTML).join('')}</div></details>`;}).join('');
+  return pageHead('CV',t('research'),t('resLede')(S.papers.length))+`<section class="sec"><div class="wrap">
+    <div class="chips"><button class="chip" type="button" id="expandAll">${t('expand')}</button><button class="chip" type="button" id="collapseAll">${t('collapse')}</button></div>
+    <div class="fields">${fields}</div>
+    <h2 class="sub">${t('earlier')}</h2><ul class="list">${S.earlier.map(x=>`<li><b>${esc(x.title)}</b> <span style="color:var(--muted)">(${esc(x.authors)})</span><br><span style="color:var(--muted)">${esc(L(x.note))}</span></li>`).join('')}</ul>
+    <h2 class="sub">${t('grants')}</h2><ul class="list">${S.grants.map(x=>`<li>${esc(L(x))}</li>`).join('')}</ul></div></section>`;
+}
+function bookHTML(b){
+  const btn=b.notify?`<button class="wbtn sm" data-book="${b.id}" type="button">${t('notify')}</button>`:`<button class="wbtn sm" data-book="${b.id}" type="button">${t('reqBook')}</button>`;
+  return `<article class="book" id="book-${b.id}">${coverHTML(b,'#book-'+b.id)}<div>
+    <div><span class="typetag">${b.type==='trade'?t('trade'):t('textbooks')}</span><span class="meta" style="display:inline">${esc(b.year)} · ${esc(b.pages)} · ${esc(L(b.status))}</span></div>
+    <h4 style="margin-top:8px">${esc(b.title)}</h4><div class="subt">${esc(b.subtitle)}</div><div class="meta">${esc(b.authors)}</div>
+    <p class="abs">${esc(L(b.abstract))}</p>${btn}</div></article>`;
+}
+function viewBooks(){
+  const part=type=>{const bs=S.books.filter(b=>b.type===type);const subs=[...new Set(bs.map(b=>b.subject.en))];
+    return subs.map(s=>{const g=bs.filter(b=>b.subject.en===s);return `<h3 class="subj">${esc(L(g[0].subject))}</h3>${g.map(bookHTML).join('')}`;}).join('');};
+  return pageHead('Hoang Dao, PhD',t('books'),t('booksLede'))+`<section class="sec"><div class="wrap">
+    <h2 class="sub" style="margin-top:0">${t('textbooks')} <span style="font-weight:400;font-size:1rem;color:var(--muted)">(${S.books.filter(b=>b.type==='textbook').length})</span></h2>${part('textbook')}
+    <h2 class="sub">${t('trade')} <span style="font-weight:400;font-size:1rem;color:var(--muted)">(${S.books.filter(b=>b.type==='trade').length})</span></h2>${part('trade')}
+  </div></section>`;
+}
+function viewProjects(){
+  return pageHead('Hoang Dao, PhD',t('projects'),t('projLede'))+featuredHTML()+`<section class="sec"><div class="wrap">${appsByGroup()}
+  <h2 class="sub">${t('initiatives')}</h2><div class="grid g3">${S.ventures.map(ventureCard).join('')}</div>
+  <h2 class="sub">${t('grants')}</h2><ul class="list">${S.grants.map(x=>`<li>${esc(L(x))}</li>`).join('')}</ul></div></section>`;
+}
+function viewAbout(){
+  return pageHead('CV','Hoang Dao, PhD',t('aboutLede'))+`<section class="sec"><div class="wrap"><div class="two">
+    <div><div class="prose">${t('bio').map(p=>`<p>${p}</p>`).join('')}</div>
+      <div class="btnrow"><a class="wbtn sm" href="${S.links.cv}">${t('cv')} ↗</a><a class="wbtn sm ghost" href="${S.links.linkedin}">LinkedIn ↗</a><a class="wbtn sm ghost" href="${S.links.orcid}">ORCID ↗</a></div>
+      <h2 class="sub">${t('education')}</h2><div class="tl">${S.education.map(x=>`<div><b>${esc(x.years)}</b><span>${esc(L(x))}</span></div>`).join('')}</div>
+      <h2 class="sub">${t('awards')}</h2><ul class="list">${S.awards.map(x=>`<li>${esc(L(x))}</li>`).join('')}</ul></div>
+    <div><h2 class="sub" style="margin-top:0">${t('positions')}</h2><div class="tl">${S.positions.map(x=>`<div><b>${esc(lang==='vi'?x.years.replace('now','nay').replace(/ to /g,' đến '):x.years)}</b><span>${esc(L(x))}</span></div>`).join('')}</div>
+      <h2 class="sub">${t('talks')}</h2><ul class="list">${S.talks.map(x=>`<li>${esc(L(x))}</li>`).join('')}</ul></div>
+  </div></div></section>`;
+}
+function viewTeaching(){
+  return pageHead('Courses',lang==='vi'?'Giảng dạy':'Teaching',t('teachLede'))+`<section class="sec"><div class="wrap">
+    <h2 class="sub" style="margin-top:0">${t('teachNow')}</h2><ul class="list">${S.teachingNow.map(x=>`<li>${esc(L(x))}</li>`).join('')}</ul>
+    <h2 class="sub">${t('materials')}</h2><div class="cgrid">${S.courses.map(courseCard).join('')}</div>
+    <h2 class="sub">${t('teachPast')}</h2><div class="grid g3">${S.teachingPast.map(x=>`<div class="card"><h3>${esc(x.place)}</h3><p>${esc(x.items)}</p><div class="meta"><b>${t('evals')}:</b></div><div class="meta">${x.evals.map(e=>`<a href="${e[1]}">${esc(e[0])}</a>`).join(' · ')}</div></div>`).join('')}</div>
+  </div></section>`;
+}
+let blogCat='all',blogQ='';
+function viewBlog(){
+  const cats=Object.keys(S.categories).filter(c=>POSTS.some(p=>p.category===c));
+  return pageHead(t('blog'),t('blogTitle'),t('blogLede'))+`<section class="sec"><div class="wrap">
+    <input class="blogsearch" id="q" type="search" placeholder="${t('search')}" aria-label="${t('search')}" value="${esc(blogQ)}">
+    <div class="chips" role="group" aria-label="Categories"><button class="chip" data-cat="all" aria-pressed="${blogCat==='all'}">${t('all')}<small>${POSTS.length}</small></button>${cats.map(c=>`<button class="chip" data-cat="${c}" aria-pressed="${blogCat===c}">${esc(catName(c))}<small>${POSTS.filter(p=>p.category===c).length}</small></button>`).join('')}</div>
+    <p class="catdesc" id="catdesc">${blogCat!=='all'?esc(lang==='vi'?S.categories[blogCat].d_vi:S.categories[blogCat].d_en):''}</p>
+    <div id="plist">${postList()}</div>
+    <div class="btnrow" style="margin-top:30px"><a class="wbtn sm" href="${S.links.ysi}">${t('follow')} ↗</a></div></div></section>`;
+}
+function postList(){
+  const q=blogQ.trim().toLowerCase();
+  const ps=POSTS.filter(p=>(blogCat==='all'||p.category===blogCat)&&(!q||(p.title_en+p.title_vi+p.excerpt_en+p.excerpt_vi+(p.tags||[]).join(' ')).toLowerCase().includes(q)));
+  if(!ps.length) return `<p style="color:var(--muted)">${t('noPosts')}</p>`;
+  let out='',cur='';
+  ps.forEach(p=>{const m=p.date.slice(0,7);if(m!==cur){cur=m;out+=`<div class="month">${monthLabel(p.date)}</div>`;}
+    const d=new Date(p.date+'T12:00:00');
+    out+=`<a class="prow" href="#post-${p.slug}"><div class="d">${d.getDate()}<small>${lang==='vi'?'Th '+(d.getMonth()+1):d.toLocaleDateString('en-GB',{month:'short'})}</small></div><div><span class="cat">${icon(p.category)}${esc(catName(p.category))}</span><h3>${esc(pT(p))}</h3><p>${esc(pX(p))}</p></div></a>`;});
+  return out;
+}
+function viewPost(slug){
+  const i=POSTS.findIndex(p=>p.slug===slug); if(i<0) return viewNotFound();
+  const p=POSTS[i],newer=POSTS[i-1],older=POSTS[i+1];
+  const fb='https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href.split('#')[0]+'#post-'+p.slug);
+  return `<div class="banner pagehead" ${bannerStyle()}><div class="wrap"><a href="#blog" class="crumb" style="text-decoration:none">← ${t('back')}</a><h1 style="max-width:900px">${esc(pT(p))}</h1><p>${esc(catName(p.category))} · ${fmtDate(p.date)} · ${p.reading_minutes||5} ${t('min')}</p></div></div>
+  <section class="sec"><div class="wrap"><article class="post"><div class="article">${lang==='vi'?p.html_vi:p.html_en}</div>
+    ${p.sources&&p.sources.length?`<div class="sources"><h2>${t('sources')}</h2><ol>${p.sources.map(s=>`<li><a href="${esc(s.url)}">${esc(s.title)}</a></li>`).join('')}</ol></div>`:''}
+    <div class="btnrow"><a class="wbtn sm" href="${fb}">${t('share')} ↗</a><a class="wbtn sm ghost" href="${S.links.ysi}">${t('follow')} ↗</a></div>
+    <nav class="postnav" aria-label="More posts">${older?`<a href="#post-${older.slug}"><small>← ${t('prev')}</small>${esc(pT(older))}</a>`:'<span></span>'}${newer?`<a class="next" href="#post-${newer.slug}"><small>${t('next')} →</small>${esc(pT(newer))}</a>`:'<span></span>'}</nav>
+  </article></div></section>`;
+}
+function viewContact(){
+  return pageHead('Hoang Dao, PhD',t('contact'),t('contactLede'))+`<section class="sec"><div class="wrap"><div class="grid g2">
+    <div class="card"><span class="kicker">${t('email')}</span><h3><a href="mailto:${S.email}">${S.email}</a></h3></div>
+    <div class="card"><span class="kicker">${t('work')}</span><h3 style="word-break:break-word"><a href="mailto:${S.emailWork}">${S.emailWork}</a></h3></div>
+    <div class="card"><span class="kicker">Phenikaa University</span><p>Faculty of Interdisciplinary Digital Technology (FIDT)<br>Nguyen Trac Street, Yen Nghia Ward, Ha Dong, Hanoi, Vietnam</p></div>
+    <div class="card"><span class="kicker">Online</span><p><a href="${S.links.linkedin}">LinkedIn</a> · <a href="${S.links.orcid}">ORCID</a> · <a href="${S.links.ysiWeb}">YSI</a> · <a href="${S.links.ysi}">YSI on Facebook</a> · <a href="${S.links.gaea}">GAEA</a></p></div>
+  </div></div></section>`;
+}
+
+const LICON={video:'<path d="M8 5v14l11-7z"/>',read:'<path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 12h7M9 16h7"/>',data:'<path d="M5 20V12M10 20V6M15 20v-9M20 20V9"/>'};
+const cimg=id=>IMG['course-'+id]||('img/course-'+id+'.jpg');
+const C=id=>S.courses.find(c=>c.id===id);
+function courseCard(c){const n=c.blocks.filter(b=>b[0]==='h2').length, v=c.blocks.filter(b=>b[0]==='link'&&b[3]==='video').length, r=c.blocks.filter(b=>b[0]==='link'&&b[3]!=='video').length;
+  return `<a class="ccard" href="#course-${c.id}"><div class="ph" style="background-image:url('${cimg(c.id)}')"></div><div class="bd"><h3>${esc(L(c.title))}</h3>${c.alt?`<p>${esc(c.alt)}</p>`:''}<p>${(lang==='vi'?[n+' chủ đề',v&&v+' video',r&&r+' bài đọc và dữ liệu',c.materials.length+' tài liệu tải về']:[n+' topics',v&&v+' videos',r&&r+' readings and data',c.materials.length+' downloads']).filter(Boolean).join(' · ')}</p></div></a>`;}
+function viewCourse(id){
+  const c=C(id); if(!c) return viewNotFound();
+  let body='',toc='',ul=null,lk=null,n=0;
+  const close=()=>{if(ul!==null){body+=`<ul class="pts">${ul}</ul>`;ul=null;} if(lk!==null){body+=`<div class="clinks">${lk}</div>`;lk=null;}};
+  c.blocks.forEach(b=>{
+    if(b[0]==='h1'||b[0]==='h2'){close();const a='cs-'+(n++);toc+=`<a class="${b[0]==='h1'?'l1':''}" href="#course-${c.id}" data-jump="${a}">${esc(b[1])}</a>`;body+=b[0]==='h1'?`<h3 class="c1" id="${a}">${esc(b[1])}</h3>`:`<h4 class="c2" id="${a}">${esc(b[1])}</h4>`;}
+    else if(b[0]==='label'){close();body+=`<div class="clabel">${esc(b[1])}</div>`;}
+    else if(b[0]==='note'){close();body+=`<p class="cnote">${esc(b[1])}</p>`;}
+    else if(b[0]==='li'){if(lk!==null){body+=`<div class="clinks">${lk}</div>`;lk=null;} ul=(ul||'')+`<li>${esc(b[1])}</li>`;}
+    else if(b[0]==='link'){if(ul!==null){body+=`<ul class="pts">${ul}</ul>`;ul=null;} lk=(lk||'')+`<a href="${esc(b[2])}"><svg viewBox="0 0 24 24" aria-hidden="true"><g class="icon">${LICON[b[3]]||LICON.read}</g></svg><span>${esc(b[1])}</span></a>`;}
+  }); close();
+  const bk=c.book&&S.books.find(x=>x.id===c.book);
+  const others=S.courses.filter(x=>x.id!==c.id);
+  return `<div class="banner pagehead" style="background-image:url('${cimg(c.id)}')"><div class="wrap"><a href="#teaching" class="crumb" style="text-decoration:none">← ${lang==='vi'?'Tất cả môn học':'All courses'}</a><h1>${esc(L(c.title))}</h1>${c.alt?`<p>${esc(c.alt)}</p>`:''}</div></div>
+  <section class="sec"><div class="wrap">
+    <div class="mats">${c.materials.map(m=>`<a class="wbtn sm" href="${esc(m[1])}">${esc(m[0])} ↓</a>`).join('')}</div>
+    ${bk?`<a class="bookcall" href="#book-${bk.id}">${coverHTML(bk,'#book-'+bk.id).replace('<a ','<span ').replace('</a>','</span>')}<span><b>${lang==='vi'?'Giáo trình đi kèm':'Companion textbook'}:</b> ${esc(bk.title)}</span></a>`:''}
+    <div class="course"><nav class="toc" aria-label="${lang==='vi'?'Mục lục':'Contents'}"><b>${lang==='vi'?'Nội dung':'Contents'}</b>${toc}</nav><div class="cbody">${body}</div></div>
+    <h2 class="sub">${lang==='vi'?'Các môn khác':'Other courses'}</h2><div class="cgrid">${others.slice(0,3).map(courseCard).join('')}</div>
+  </div></section>`;
+}
+
+function appCard(a){const mono=a.name.split(/[\s&]+/).filter(Boolean).slice(0,2).map(w=>w[0]).join('').toUpperCase();
+  const bk=a.book?S.books.find(b=>b.id===a.book):null;
+  return `<article class="app"><div class="ahead"><span class="mono">${esc(mono)}</span><div><span class="kicker">${esc(L(a.kind))}</span><h3>${esc(a.name)}</h3></div></div>
+  <p class="purpose">${esc(L(a.purpose))}</p><p class="desc">${esc(L(a.desc))}</p><p class="who"><b>${t('forWho')}:</b> ${esc(L(a.who))}</p>
+  <div class="foot"><a class="wbtn sm" href="${a.url}">${t('visit')} ↗</a>${bk?`<a class="wbtn sm ghost" href="#book-${bk.id}">${esc(bk.title.split(':')[0])}</a>`:''}</div></article>`;}
+function appsByGroup(){const order=Object.keys(S.appGroups);const as=S.apps.slice().sort((a,b)=>order.indexOf(a.group)-order.indexOf(b.group));return `<h2 class="sub" style="margin-top:0">${lang==='vi'?'Tất cả ứng dụng':'All apps'} <span style="font-weight:400;font-size:1rem;color:var(--muted)">(${as.length+1})</span></h2><div class="grid g3">${as.map(appCard).join('')}</div>`;}
+function viewNotFound(){return `<section class="sec"><div class="wrap"><p>${t('notFound')} <a href="#home">→</a></p></div></section>`;}
+
+function route(){
+  const h=(location.hash||'#home').slice(1)||'home'; let active=h,html,scrollTo=null;
+  if(h==='home') html=viewHome();
+  else if(h==='about') html=viewAbout();
+  else if(h==='research'){resFilter='all';html=viewResearch();}
+  else if(h.startsWith('research-')){const g=h.slice(9);resFilter=S.groups[g]?g:'all';active='research';html=viewResearch();scrollTo='field-'+g;}
+  else if(h==='books') html=viewBooks();
+  else if(h.startsWith('book-')){active='books';html=viewBooks();scrollTo=h;}
+  else if(h==='projects') html=viewProjects();
+  else if(h==='teaching') html=viewTeaching();
+  else if(h.startsWith('course-')){active='teaching';html=viewCourse(h.slice(7));}
+  else if(h==='blog') html=viewBlog();
+  else if(h.startsWith('blog-')){const c=h.slice(5);blogCat=S.categories[c]?c:'all';active='blog';html=viewBlog();}
+  else if(h.startsWith('post-')){active='blog';html=viewPost(h.slice(5));}
+  else if(h==='contact') html=viewContact();
+  else {html=viewNotFound();active='';}
+  renderChrome(active);
+  document.getElementById('app').innerHTML=html;
+  document.querySelectorAll('.article table').forEach(tb=>{const w=document.createElement('div');w.className='tablewrap';tb.replaceWith(w);w.appendChild(tb);});
+  document.getElementById('mainNav').classList.remove('open');
+  const p=h.startsWith('post-')?POSTS.find(x=>x.slug===h.slice(5)):null;
+  document.title=p?pT(p)+' · Hoang Dao':'Hoang Dao, PhD';
+  return scrollTo;
+}
+function go(){const s=route();if(s){const el=document.getElementById(s);if(el){el.scrollIntoView({block:'start'});return;}}window.scrollTo(0,0);}
+window.addEventListener('hashchange',go);
+
+document.addEventListener('click',e=>{
+  if(e.target.id==='expandAll'){document.querySelectorAll('details.field').forEach(d=>d.open=true);return;}
+  if(e.target.id==='collapseAll'){document.querySelectorAll('details.field').forEach(d=>d.open=false);return;}
+  const j=e.target.closest('[data-jump]'); if(j){e.preventDefault();const el=document.getElementById(j.dataset.jump);if(el)el.scrollIntoView({behavior:'smooth',block:'start'});return;}
+  const c=e.target.closest('[data-cat]');
+  if(c){blogCat=c.dataset.cat;document.querySelectorAll('[data-cat]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.cat===blogCat));document.getElementById('plist').innerHTML=postList();document.getElementById('catdesc').textContent=blogCat!=='all'?(lang==='vi'?S.categories[blogCat].d_vi:S.categories[blogCat].d_en):'';return;}
+  const r=e.target.closest('[data-req]'); if(r){const p=S.papers.find(x=>x.id===r.dataset.req);openReq('Paper request: '+p.title,t('reqTitle'),p.title);return;}
+  const b=e.target.closest('[data-book]'); if(b){const k=S.books.find(x=>x.id===b.dataset.book);openReq((k.notify?'Book update: ':'Book copy request: ')+k.title,k.notify?t('reqTitleNotify'):t('reqTitleBook'),k.title);}
+});
+document.addEventListener('input',e=>{if(e.target.id==='q'){blogQ=e.target.value;document.getElementById('plist').innerHTML=postList();}});
+document.getElementById('topSearch').addEventListener('keydown',e=>{if(e.key==='Enter'){blogQ=e.target.value;blogCat='all';if(location.hash==='#blog'){route();}else{location.hash='blog';}}});
+function setLang(l){lang=l;try{localStorage.setItem('hd-lang',l)}catch(e){}route();}
+document.getElementById('lang-en').onclick=()=>setLang('en');
+document.getElementById('lang-vi').onclick=()=>setLang('vi');
+document.getElementById('menuBtn').onclick=()=>{const n=document.getElementById('mainNav');const o=n.classList.toggle('open');document.getElementById('menuBtn').setAttribute('aria-expanded',o);};
+
+const dlg=document.getElementById('reqDlg');
+function openReq(subj,title,what){
+  document.getElementById('reqTitle').textContent=title;
+  document.getElementById('reqText').innerHTML=esc(t('reqText'))+' <b>'+S.email+'</b>';
+  document.getElementById('reqSubj').textContent=subj;
+  document.getElementById('reqMail').href='mailto:'+S.email+'?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent('Dear Dr. Dao,\n\nI am writing about "'+what+'".\n\nName:\nAffiliation:\n\nThank you!');
+  document.getElementById('reqCopy').textContent=t('copy');document.getElementById('reqClose').textContent=t('close');document.getElementById('reqToast').textContent='';
+  dlg.dataset.subj=subj; if(dlg.showModal) dlg.showModal(); else dlg.setAttribute('open','');
+}
+document.getElementById('reqClose').onclick=()=>dlg.close();
+document.getElementById('reqCopy').onclick=async()=>{try{await navigator.clipboard.writeText(S.email+'\n'+dlg.dataset.subj);document.getElementById('reqToast').textContent=t('copied');}catch(e){document.getElementById('reqToast').textContent=t('copyFail')+S.email;}};
+dlg.addEventListener('click',e=>{if(e.target===dlg)dlg.close();});
+go();
+})();
+</script>
+</body>
+</html>
