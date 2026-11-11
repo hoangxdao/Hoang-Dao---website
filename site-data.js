@@ -410,6 +410,66 @@ window.SITE = {
    "jel": "D72, D74, G01, G33, N22, N52, P16",
    "keywords": "fire sales; financial crises; elite capture; crisis resolution; political instability; Great Depression; farm foreclosures",
    "abstract": "In a crisis, owners who need cash sell productive assets to those who have it. With a new county panel for the American farm crisis of the 1930s, I find that, between neighbouring counties on opposite sides of a state line, more indebted owners lost title (owner-operators fell by 1.4% per standard deviation of debt) and that the first buyer at a forced sale was usually the creditor. I embed this fire-sale channel, estimated from the neighbouring-county slopes and the size of the crisis fire sale, in a model in which captured states tilt crisis relief toward incumbents and accumulated grievance raises the hazard of successful regime-change challenges. Relief that reaches illiquid owners before they must sell lowers the probability of a successful challenge within a century by 2.2 percentage points at the estimate, and by 0.4 to 6.2 points across the robust set of the fire-sale parameter, which the size of the fire sale bounds away from the point where the mechanism vanishes. Left to choose its relief rule, a captured regime rarely adopts such relief, so it works only as a rule fixed in advance."
+  },
+  {
+   "id": "lights-out",
+   "group": "clim",
+   "title": "Lights Out: What Markets Pay When Mandatory Emissions Disclosure Is Switched Off",
+   "authors": "Hoang Dao",
+   "date": "2026-11",
+   "jel": "G14, G18, Q54, Q58, M48, K32",
+   "keywords": "mandatory disclosure; greenhouse gas reporting; regulatory risk; event study; carbon pricing; deregulation",
+   "abstract": "On 12 September 2025 the US Environmental Protection Agency proposed to end the Greenhouse Gas Reporting Program, the facility-level emissions census that roughly 8,000 large sources had filed since 2010. We use the proposal and three related announcements to measure what mandatory emissions disclosure is worth to listed firms. Matching 3,327 parent companies to 311 listed issuers, we find that non-utility reporters earned 1.16 percentage points more than same-industry non-reporters over three trading days, and 0.32 points more per log point of reported emissions per dollar of assets. Placebo-day randomization inference and stacking across announcements confirm the result (stacked p = 0.002). The gain is about 250 times the present value of the compliance costs a median reporter would save. Utilities moved the opposite way. Emissions that remain public through other programs are priced exactly like emissions that would vanish, and the response does not scale with how much new information the reports contained. A simple model with four channels (compliance cost, public scrutiny, investor learning and the regulatory option value of federal data) shows that only the last fits this pattern. Mandatory disclosure appears to be valued less as information than as the foundation on which future carbon regulation would be built."
+  },
+  {
+   "id": "paying-for-past",
+   "group": "clim",
+   "title": "Paying for the Past: Results-Based Forest Carbon Payments, Reference Levels, and Deforestation in Vietnam",
+   "authors": "Hoang Dao",
+   "date": "2026-11",
+   "jel": "Q23, Q54, Q56, Q58, O13, H77",
+   "keywords": "REDD+; results-based payments; additionality; reference levels; deforestation; Vietnam",
+   "abstract": "Results-based payments reward a jurisdiction for cutting forest emissions below a historical reference level. I evaluate one of the first such payments in Asia, the World Bank’s Emission Reductions Payment Agreement (ERPA) for six provinces of Vietnam’s North Central Coast, using 30-metre satellite maps that separate the clearing of natural forest from its degradation. A Poisson difference-in-differences design compares the 76 ERPA districts with 266 districts elsewhere in Vietnam’s forested regions over 2006 to 2024. Two facts emerge. First, the only vintage paid so far (2018 to 2019, verified at 16.2 million tCO₂e) shows no reduction in deforestation relative to the counterfactual: deforestation fell by about two thirds against the 2005 to 2015 reference level, but it fell by similar amounts in provinces with no contract, after a nationwide closure of natural forests in 2017. Second, once the contract was signed in late 2020, and above all once money reached forest owners in 2023, the deforestation hazard in ERPA districts fell by 63 percent relative to controls adjusted for altitude-specific shocks (randomization inference p = 0.003). Degradation did not fall in either period. A simple model explains both facts: an area-based benefit-sharing rule raises the cost of clearing but leaves degradation unpriced, and a backward-looking reference level credits common shocks. At the 95 percent upper bound, the program caused at most about 0.9 million tonnes of the 11.7 million tonnes of avoided emissions credited for 2018 to 2019. The program did reduce clearing later, by roughly 3,200 hectares a year. Payments thus bought real reductions, but for years other than those paid."
+  },
+  {
+   "id": "counted-not-curbed",
+   "group": "clim",
+   "title": "Counted, Not Curbed: Administrative Selection and the Real Effects of Facility Greenhouse Gas Inventory Lists in Vietnam",
+   "authors": "Hoang Dao",
+   "date": "2026-11",
+   "jel": "Q54, Q58, L51, H83, O13, G14",
+   "keywords": "greenhouse gas inventory; mandatory disclosure; state capacity; energy use; Vietnam; carbon market",
+   "abstract": "Mandatory greenhouse gas inventories are the first rung of most carbon-pricing ladders, yet little is known about who regulators actually manage to count or whether being counted changes behavior. I digitize every facility named in Vietnam’s three national inventory lists (2022, 2024 and 2026) and link them to five vintages of the national register of key energy users, which reports audited energy use for every industrial facility above 1,000 tonnes of oil equivalent (TOE). The law makes all such facilities eligible, but the 2022 list named only 68.6 percent of the 2,475 eligible industrial facilities, and the shortfall is explained by provinces and by past reporting history rather than by energy use. Lists churned heavily: 29 percent of 2022 names were dropped in 2024 and 37 percent of 2024 names in 2026, many of them still above the legal threshold. Exploiting the eligible-but-omitted facilities as a comparison group, listing had no detectable effect on energy use through 2023 (point estimate −3.4 percent, standard error 3.0 to 5.4 percent; pre-trends flat), a result in line with a calibrated model in which listing carries only a small expected carbon price. Listing did raise the probability that a facility stayed visible in the energy register by about 7 to 8 percentage points, an administrative complementarity that appears even in registers compiled after listing but measuring pre-listing energy. Equity markets reacted little. Inventory mandates in a capacity-constrained state first change who the state can see; whether they change what firms burn depends on the price that follows."
+  },
+  {
+   "id": "certifying-tonnes",
+   "group": "clim",
+   "title": "Certifying Tonnes: An Integrity Label and the Demand for Voluntary Carbon Credits",
+   "authors": "Hoang Dao",
+   "date": "2026-11",
+   "jel": "D82, L15, Q54, Q58, G14",
+   "keywords": "voluntary carbon market; certification; quality labels; carbon offsets; Core Carbon Principles; event study",
+   "abstract": "Can a third-party quality label revive a market for lemons? Starting in June 2024 the Integrity Council for the Voluntary Carbon Market (ICVCM) graded the methodologies behind voluntary carbon credits, granting its Core Carbon Principles (CCP) label to some methodology versions and denying it to others. Because the label applied to credits already sitting in registry accounts, each decision changed public information about an existing stock without touching the credits themselves. I assemble transaction-level registry data covering 3,936 projects and 585 million retired tonnes from January 2021 to August 2026 and compare credits under approved, rejected and never-assessed methodologies around the decision dates. Approval raised monthly retirements of approved credits by 0.51 log points in the preferred imputation estimator that allows group-specific pre-trends (0.78 without trends), an effect that builds over two years and also shows up in issuance. Rejection of grid-connected renewable energy, which covered roughly a third of the market, lowered retirements by a smaller 0.11 to 0.25 log points, concentrated among small projects and fresh vintages, and left aggregate volumes largely intact; the March 2025 cookstove rulings produced no detectable response. A Bayesian certification model rationalizes the asymmetry: buyers move on news, a widely expected rejection carries little of it, and the clienteles left holding low-reputation credits are the least sensitive to reputation. The label works as an information device, but mostly on the upside."
+  },
+  {
+   "id": "free-permits",
+   "group": "clim",
+   "title": "Free Permits, Faint Plumes: Satellite Evidence on the First Year of Vietnam's Pilot Emissions Trading Scheme",
+   "authors": "Hoang Dao",
+   "date": "2026-11",
+   "jel": "Q52, Q54, Q58, L94, O13",
+   "keywords": "emissions trading; carbon pricing; free allocation; satellite remote sensing; Vietnam; difference-in-differences",
+   "abstract": "In February 2026 Vietnam handed 110 thermal power plants, steel mills and clinker kilns free, facility-specific greenhouse gas quotas worth about 2.6 billion US dollars at the price later observed on its new carbon exchange. I ask whether this pilot emissions trading scheme changed what the covered plants emit in its first compliance year. Because verified inventories are not due until December 2027, I measure behaviour from orbit: daily TROPOMI nitrogen dioxide retrievals over 128 large point sources between January 2019 and October 2026, compared against plants of the same technology that the selection rules left out. Covered plumes did not dim. The preferred difference-in-differences estimate of the change in the log plume-to-background ratio is −0.022 (standard error 0.016), the event study is flat before and after allocation, and imputation, randomization-inference and placebo-date exercises all point to zero. Translating column changes into emissions, the estimates rule out reductions larger than roughly 13 percent at conventional confidence. Equity markets agree: a long-short portfolio of listed covered firms earns no abnormal return around six regulatory milestones once inference accounts for common shocks. A model of intensity-based free allocation with centralized dispatch, a 30 percent offset allowance, banking and a distant compliance date explains the silence: the effective marginal price of a tonne in 2026 was a small fraction of the posted $5. The results suggest that the pilot’s binding constraint is credibility and price formation, not coverage."
+  },
+  {
+   "id": "thresholds-without-teeth",
+   "group": "clim",
+   "title": "Thresholds Without Teeth? What Stock Prices Say About California's Climate Disclosure Mandates",
+   "authors": "Hoang Dao",
+   "date": "2026-11",
+   "jel": "G14, G18, K22, M48, Q54",
+   "keywords": "mandatory disclosure; climate risk; greenhouse gas reporting; Scope 3; regulatory thresholds; event study; randomization inference",
+   "abstract": "California’s SB 253 and SB 261 require firms doing business in the state to disclose greenhouse gas emissions (revenue above $1 billion) and climate-related financial risk (revenue above $500 million). Both laws spent three years in court, and on November 9, 2026, the Ninth Circuit upheld Scope 1 and 2 reporting while enjoining Scope 3 reporting and SB 261. I use the two statutory revenue cutoffs and ten dated legal and regulatory events, including that ruling, to measure how much investors think these mandates are worth. The design compares listed firms just above and just below each cutoff on the same event day, and it judges every event-day estimate against the same regression run on 295 ordinary trading days. Pooled across nine events and signed by the direction of the news, the discontinuity in two-day abnormal returns is 0.05 percentage points at the $1 billion cutoff, with a 95% interval of −0.27 to 0.36 points in the widest design. Single-event estimates that look significant under industry-clustered standard errors do not survive the placebo benchmark: on non-event days those standard errors reject a true zero about twice as often as their nominal 5% level. Coverage also leaves no visible trace elsewhere. There is no bunching of revenue below either cutoff, no jump in the share of firms that name the statutes in their filings, and no differential change in emissions language in annual reports. The evidence fits a model in which investors treat coverage as a smooth function of size, or in which the private costs and benefits of disclosure roughly offset at the margin. Either reading puts a tight ceiling on the firm-value stakes that both sides of the litigation have claimed."
   }
  ],
  "groups": {
@@ -424,6 +484,10 @@ window.SITE = {
   "env": {
    "en": "Environmental, agricultural and energy economics",
    "vi": "Kinh tế môi trường, nông nghiệp và năng lượng"
+  },
+  "clim": {
+   "en": "Climate policy, carbon markets and disclosure",
+   "vi": "Chính sách khí hậu, thị trường carbon và công bố thông tin"
   },
   "edu": {
    "en": "Economics of education and AI",
