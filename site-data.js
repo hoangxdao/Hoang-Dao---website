@@ -1049,6 +1049,10 @@ window.SITE = {
  ],
  "talks": [
   {
+   "en": "Accepted for 2027: Asian Conference on Education & International Development (ACEID 2027), Tokyo, oral presentation of \"Wiring the Highlands: Evaluating School Digital Transformation in Northern Vietnam Using Natural Experiment\"; Comparative and International Education Society (CIES 2027), Madison, WI, \"Can Digital Transformation Improve Educational Outcomes in Rural Ethnic-Minority Regions? Difference-in-Differences Evidence from a Vietnamese Province\"",
+   "vi": "Được chấp nhận năm 2027: Hội nghị Châu Á về Giáo dục & Phát triển Quốc tế (ACEID 2027), Tokyo, báo cáo miệng \"Wiring the Highlands: Evaluating School Digital Transformation in Northern Vietnam Using Natural Experiment\"; Hội Giáo dục So sánh và Quốc tế (CIES 2027), Madison, Hoa Kỳ, \"Can Digital Transformation Improve Educational Outcomes in Rural Ethnic-Minority Regions? Difference-in-Differences Evidence from a Vietnamese Province\""
+  },
+  {
    "en": "Keynote speaker: National Economics University (NEU) conference; UNDP conference; U.S. Embassy",
    "vi": "Diễn giả chính: hội thảo Đại học Kinh tế Quốc dân (NEU); hội thảo UNDP; Đại sứ quán Hoa Kỳ"
   },
