@@ -3334,5 +3334,11 @@ window.SITE = {
    "d_en": "Things your uncle says about the economy, checked.",
    "d_vi": "Kiểm chứng những gì chú bác hay nói về kinh tế."
   }
- }
+ },
+ "memberships": [
+  {
+   "en": "The Econometric Society, Ordinary Member (2026 to present)",
+   "vi": "Hội Kinh tế lượng (The Econometric Society), hội viên chính thức (2026 đến nay)"
+  }
+ ]
 };

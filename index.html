@@ -408,7 +408,7 @@ const T={
   bio:["I am an applied microeconomist working on urban and transportation economics with the choice models of applied industrial organization. Lately I have followed the data into digital, environmental, education and health economics.",
        "I direct the Digital Economics program at Phenikaa University in Hanoi. Before coming home I taught at the University of the South (Sewanee) and Berry College, after a PhD at the University at Buffalo.",
        "Outside work: coffee, soccer, Pokémon Go and sketching."],
-  positions:"Experience",education:"Education",awards:"Awards and scholarships",talks:"Talks and conferences",cv:"Full CV (Google Doc)",
+  positions:"Experience",education:"Education",awards:"Awards and scholarships",talks:"Talks and conferences",memberships:"Professional memberships",cv:"Full CV (Google Doc)",
   teachLede:"Micro and applied micro, taught with real data. Favourites: urban, health, digital economics and applied econometrics.",
   teachNow:"Teaching now at Phenikaa",teachPast:"Previously taught",evals:"Student evaluations",materials:"Course materials",
   blogTitle:"Ceteris Paribus, Mostly",blogLede:"Economics opinions with sarcasm, a lot of humor and a bit of rigor. New posts every weekday-ish.",
@@ -435,7 +435,7 @@ const T={
   bio:["Tôi là nhà kinh tế học vi mô ứng dụng, nghiên cứu kinh tế đô thị và giao thông bằng các mô hình lựa chọn của tổ chức ngành ứng dụng. Gần đây tôi đi theo dữ liệu sang kinh tế số, môi trường, giáo dục và y tế.",
        "Tôi là Giám đốc chương trình Kinh tế số tại Trường Đại học Phenikaa (Hà Nội). Trước khi về nước, tôi giảng dạy tại University of the South (Sewanee) và Berry College, sau khi nhận bằng Tiến sĩ tại University at Buffalo.",
        "Ngoài giờ làm: cà phê, bóng đá, Pokémon Go và vẽ phác thảo."],
-  positions:"Kinh nghiệm",education:"Học vấn",awards:"Giải thưởng và học bổng",talks:"Báo cáo và hội thảo",cv:"CV đầy đủ (Google Doc)",
+  positions:"Kinh nghiệm",education:"Học vấn",awards:"Giải thưởng và học bổng",talks:"Báo cáo và hội thảo",memberships:"Hội viên tổ chức chuyên môn",cv:"CV đầy đủ (Google Doc)",
   teachLede:"Vi mô và vi mô ứng dụng, dạy bằng dữ liệu thật. Yêu thích: kinh tế đô thị, y tế, kinh tế số và kinh tế lượng ứng dụng.",
   teachNow:"Đang giảng dạy tại Phenikaa",teachPast:"Đã giảng dạy",evals:"Đánh giá của sinh viên",materials:"Tài liệu môn học",
   blogTitle:"Ceteris Paribus, Mostly",blogLede:"Bình luận kinh tế kèm chút mỉa mai, rất nhiều tiếng cười và một ít nghiêm túc. Bài mới gần như mỗi ngày làm việc.",
@@ -557,7 +557,8 @@ function viewAbout(){
     <div><div class="prose">${t('bio').map(p=>`<p>${p}</p>`).join('')}</div>
       <div class="btnrow"><a class="wbtn sm" href="${S.links.cv}">${t('cv')} ↗</a><a class="wbtn sm ghost" href="${S.links.linkedin}">LinkedIn ↗</a><a class="wbtn sm ghost" href="${S.links.orcid}">ORCID ↗</a></div>
       <h2 class="sub">${t('education')}</h2><div class="tl">${S.education.map(x=>`<div><b>${esc(x.years)}</b><span>${esc(L(x))}</span></div>`).join('')}</div>
-      <h2 class="sub">${t('awards')}</h2><ul class="list">${S.awards.map(x=>`<li>${esc(L(x))}</li>`).join('')}</ul></div>
+      <h2 class="sub">${t('awards')}</h2><ul class="list">${S.awards.map(x=>`<li>${esc(L(x))}</li>`).join('')}</ul>
+      <h2 class="sub">${t('memberships')}</h2><ul class="list">${(S.memberships||[]).map(x=>`<li>${esc(L(x))}</li>`).join('')}</ul></div>
     <div><h2 class="sub" style="margin-top:0">${t('positions')}</h2><div class="tl">${S.positions.map(x=>`<div><b>${esc(lang==='vi'?x.years.replace('now','nay').replace(/ to /g,' đến '):x.years)}</b><span>${esc(L(x))}</span></div>`).join('')}</div>
       <h2 class="sub">${t('talks')}</h2><ul class="list">${S.talks.map(x=>`<li>${esc(L(x))}</li>`).join('')}</ul></div>
   </div></div></section>`;
